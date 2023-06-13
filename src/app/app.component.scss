@@ -1,0 +1,46 @@
+
+.forecastHeading {
+    display: flex;
+    margin: 20px;
+    h2 {
+        color: #a52a2a;
+        font-size: 30px;
+    }
+    .searchBox {
+        display: flex;
+        input {
+            width: 250px;
+            @media(max-width: 575px) {
+                width: 100%;
+                margin: 10px 0px;
+            }
+        }
+        button {
+            width: 100px;
+            background-color: #a52a2a;
+            color: #fff;
+            border: 1px solid #a52a2a;
+            :visited {
+                outline: none;
+            }
+        }
+        @media(max-width: 575px) {
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
+.forecastData {
+    .forecastDate {
+        background-color: #a52a2a;
+        color: #fff;
+    }
+    .forecastTemprature {
+        background-color: #ccc;
+        color: #fff;
+    }
+    th,td {
+        text-align: center;
+    }
+}
