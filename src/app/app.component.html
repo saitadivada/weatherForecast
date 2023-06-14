@@ -26,6 +26,10 @@
     <h4 align="center" class="mt-8">No data found</h4>
   </section>
 
+  <section *ngIf = "cityNotFound">
+    <h4 align="center" class="mt-8">{{errorMessage}}</h4>
+  </section>
+
   <section class="forecastData">
     <div class="col-md-12">
       <div class="row">
